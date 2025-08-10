@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+
+    <title>Chaos Monkey JS – Autocannon GUI for Load Testing</title>
+    <meta
+      name="description"
+      content="Run Autocannon tests with a modern GUI: configure endpoints, headers, body & query params, visualize live throughput/latency, view logs, and save history."
+    />
+    <meta
+      name="keywords"
+      content="autocannon, load testing, performance testing, benchmarking, Node.js, HTTP, GUI, dashboard, charts"
+    />
+    <meta name="author" content="Kartik Mehta" />
+    <meta
+      name="robots"
+      content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"
+    />
+    <link rel="canonical" href="CANONICAL_URL" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="CANONICAL_URL" />
+    <meta property="og:title" content="Chaos Monkey JS – Autocannon GUI" />
+    <meta
+      property="og:description"
+      content="Point it at any endpoint and watch live req/s, throughput, latency percentiles, and logs—no CLI parsing required."
+    />
+    <meta property="og:image" content="OG_IMAGE_URL" />
+    <meta property="og:site_name" content="Chaos Monkey JS" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Chaos Monkey JS – Autocannon GUI" />
+    <meta
+      name="twitter:description"
+      content="A modern dashboard for Autocannon: configure requests, run tests, and get beautiful charts & logs."
+    />
+    <meta name="twitter:image" content="OG_IMAGE_URL" />
+    <meta name="twitter:creator" content="@kartikmehta" />
+
+    <!-- PWA / Icons -->
+    <link rel="icon" href="./images/chaos.png" sizes="any" />
+    <meta name="theme-color" content="#0b0f19" />
+
+    <!-- Structured Data: SoftwareApplication -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Chaos Monkey JS",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "description": "A GUI dashboard for Autocannon load testing with live charts, logs, and run history.",
+        "url": "CANONICAL_URL",
+        "image": "OG_IMAGE_URL",
+        "creator": { "@type": "Person", "name": "Kartik Mehta" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    </script>
+
+    <!-- Dark mode boot -->
+    <script>
+      const theme =
+        localStorage.getItem("theme") ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light");
+      if (theme === "dark") document.documentElement.classList.add("dark");
+    </script>
+  </head>
+
+  <body class="min-h-screen bg-background text-foreground">
+    <div id="root"></div>
+    <script type="module" src="./src/main.tsx"></script>
+    <noscript>
+      <p>
+        Chaos Monkey JS requires JavaScript to run Autocannon tests and render
+        charts.
+      </p>
+    </noscript>
+  </body>
+</html>
