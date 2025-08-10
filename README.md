@@ -8,13 +8,6 @@ This is a Node.js + Express backend for a GUI wrapper around [autocannon](https:
 - **Real-time logs** via Server-Sent Events (SSE)
 - **In-memory history** of recent test runs
 - **Parameter snapshot logging** (query params, payload, headers, etc.)
-- **Progress tracking** with per-second request/byte stats
-- Modular architecture with:
-  - Routes
-  - Controllers
-  - Services
-  - Middleware
-  - Config & environment variables
 
 ## API Endpoints
 
